@@ -1,0 +1,30 @@
+[
+  {
+    "file": "01_旅行编辑_Editorial.svg",
+    "source": "User-supplied template; original local filesystem path omitted",
+    "sha256": "454ff6da8b473d9395be7bafe814bb5a61587c38a87ac1543aa3c2e77b106f12",
+    "purpose": "用户提供的结构参考，不提供产品事实",
+    "license": "用户提供；未核验第三方再分发许可"
+  },
+  {
+    "file": "02_旅行手记_Zine.svg",
+    "source": "User-supplied template; original local filesystem path omitted",
+    "sha256": "ec1eec436630e9108547404a4a262a4d929828af65029eb33c0861dfa477005f",
+    "purpose": "用户提供的结构参考，不提供产品事实",
+    "license": "用户提供；未核验第三方再分发许可"
+  },
+  {
+    "file": "03_瑞士信息网格_Swiss.svg",
+    "source": "User-supplied template; original local filesystem path omitted",
+    "sha256": "101fcf1fbf4aeeccf283b583d78f3d75bbdaa9e8abbb5f041e4d02e5ff7021dd",
+    "purpose": "用户提供的结构参考，不提供产品事实",
+    "license": "用户提供；未核验第三方再分发许可"
+  },
+  {
+    "file": "04_精品旅行_Boutique.svg",
+    "source": "User-supplied template; original local filesystem path omitted",
+    "sha256": "e57feb9f44304eccb9b57232a41530b1bbf71ba1a0c14c4eaade6c3eb897fbb5",
+    "purpose": "用户提供的结构参考，不提供产品事实",
+    "license": "用户提供；未核验第三方再分发许可"
+  }
+]

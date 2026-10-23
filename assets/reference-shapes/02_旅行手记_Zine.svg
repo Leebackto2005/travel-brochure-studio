@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1600" viewBox="0 0 1080 1600">
+<defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1" fill="#b5b4ab" opacity=".4"/></pattern></defs>
+<rect x="0" y="0" width="1080" height="1600" rx="0" fill="#FAF4EA" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="0" y="0" width="1080" height="17" rx="0" fill="#244B41" stroke="none" stroke-width="1" opacity="1"/>
+<text x="54" y="73" fill="#244B41" font-family="Noto Serif CJK SC, Noto Serif, serif" font-weight="700" font-size="35" letter-spacing="1" text-anchor="start" opacity="1">JOURNEY</text>
+<text x="54" y="107" fill="#D96541" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="17" letter-spacing="2" text-anchor="start" opacity="1">旅行手记   /   TRAVEL ZINE</text>
+<circle cx="965" cy="66" r="43" fill="#D96541" stroke="none" stroke-width="1"/>
+<text x="965" y="62" fill="#fff" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="32" letter-spacing="0" text-anchor="middle" opacity="1">05</text>
+<text x="965" y="85" fill="#fff" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="10" letter-spacing="1.2" text-anchor="middle" opacity="1">DAYS</text>
+<path d="M54 128 L1027 128" fill="none" stroke="#244B41" stroke-width="1" opacity="1" />
+<text x="54" y="193" fill="#244B41" font-family="Noto Serif CJK SC, Noto Serif, serif" font-weight="600" font-size="53" letter-spacing="0" text-anchor="start" opacity="1">把旅程写进日常</text>
+<text x="54" y="225" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="450" font-size="18" letter-spacing="0" text-anchor="start" opacity="1">五天四晚 · 线路名称 / 出发日期 / 旅程概览</text>
+<rect x="54" y="249" width="664" height="224" rx="0" fill="#DCE5D9" stroke="#A5B3A3" stroke-width="1.15" opacity="1"/>
+<path d="M57 252 L715 470" fill="none" stroke="#A5B3A3" stroke-width="0.9" opacity="0.42" />
+<path d="M715 252 L57 470" fill="none" stroke="#A5B3A3" stroke-width="0.9" opacity="0.42" />
+<rect x="361.5" y="338.38" width="49" height="36.75" rx="2" fill="none" stroke="#A5B3A3" stroke-width="2" opacity="1"/>
+<circle cx="397.27" cy="349.65" r="3.43" fill="#A5B3A3" stroke="none" stroke-width="1"/>
+<path d="M366.89 369.25 l11.270000000000001 -13.72 l7.84 8.82 l7.84 -8.82 l13.72 13.72Z" fill="#A5B3A3"/>
+<rect x="63" y="443" width="126" height="23" rx="1" fill="#ffffff" stroke="none" stroke-width="1" opacity="0.84"/>
+<text x="71" y="460" fill="#A5B3A3" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="12" letter-spacing="0" text-anchor="start" opacity="1">封面照片占位</text>
+<rect x="737" y="249" width="290" height="224" rx="0" fill="#F0E2D2" stroke="#C8A78D" stroke-width="1.15" opacity="1"/>
+<path d="M740 252 L1024 470" fill="none" stroke="#C8A78D" stroke-width="0.9" opacity="0.42" />
+<path d="M1024 252 L740 470" fill="none" stroke="#C8A78D" stroke-width="0.9" opacity="0.42" />
+<rect x="857.5" y="338.38" width="49" height="36.75" rx="2" fill="none" stroke="#C8A78D" stroke-width="2" opacity="1"/>
+<circle cx="893.27" cy="349.65" r="3.43" fill="#C8A78D" stroke="none" stroke-width="1"/>
+<path d="M862.89 369.25 l11.270000000000001 -13.72 l7.84 8.82 l7.84 -8.82 l13.72 13.72Z" fill="#C8A78D"/>
+<rect x="746" y="443" width="126" height="23" rx="1" fill="#ffffff" stroke="none" stroke-width="1" opacity="0.84"/>
+<text x="754" y="460" fill="#C8A78D" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="12" letter-spacing="0" text-anchor="start" opacity="1">次要照片</text>
+<rect x="54" y="491" width="974" height="102" rx="0" fill="#244B41" stroke="none" stroke-width="1" opacity="1"/>
+<text x="80" y="524" fill="#fff" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="650" font-size="19" letter-spacing="1.2" text-anchor="start" opacity="1">ROUTE  /  行程路线</text>
+<path d="M230 549 L902 549" fill="none" stroke="#B7CBC2" stroke-width="3" opacity="1" />
+<circle cx="240" cy="549" r="10" fill="#D96541" stroke="#FAF4EA" stroke-width="2"/>
+<text x="240" y="574" fill="#fff" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="600" font-size="13" letter-spacing="0" text-anchor="middle" opacity="1">01</text>
+<circle cx="401" cy="549" r="10" fill="#F6D5A1" stroke="#FAF4EA" stroke-width="2"/>
+<text x="401" y="574" fill="#fff" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="600" font-size="13" letter-spacing="0" text-anchor="middle" opacity="1">02</text>
+<circle cx="562" cy="549" r="10" fill="#F6D5A1" stroke="#FAF4EA" stroke-width="2"/>
+<text x="562" y="574" fill="#fff" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="600" font-size="13" letter-spacing="0" text-anchor="middle" opacity="1">03</text>
+<circle cx="723" cy="549" r="10" fill="#F6D5A1" stroke="#FAF4EA" stroke-width="2"/>
+<text x="723" y="574" fill="#fff" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="600" font-size="13" letter-spacing="0" text-anchor="middle" opacity="1">04</text>
+<circle cx="884" cy="549" r="10" fill="#D96541" stroke="#FAF4EA" stroke-width="2"/>
+<text x="884" y="574" fill="#fff" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="600" font-size="13" letter-spacing="0" text-anchor="middle" opacity="1">05</text>
+<text x="80" y="572" fill="#B8D3C5" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="14" letter-spacing="1.3" text-anchor="start" opacity="1">5 DAYS</text>
+<text x="54" y="640" fill="#244B41" font-family="Noto Serif CJK SC, Noto Serif, serif" font-weight="700" font-size="27" letter-spacing="0" text-anchor="start" opacity="1">DAILY FIELD NOTES</text>
+<path d="M55 652 L1027 652" fill="none" stroke="#244B41" stroke-width="1" opacity="1" />
+<text x="55" y="724" fill="#D96541" font-family="Noto Serif CJK SC, Noto Serif, serif" font-weight="600" font-size="63" letter-spacing="0" text-anchor="start" opacity="1">01</text>
+<text x="59" y="747" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="13" letter-spacing="2" text-anchor="start" opacity="1">DAY</text>
+<rect x="150" y="677" width="285" height="122" rx="0" fill="#E5E7D8" stroke="#AEBDAA" stroke-width="1.15" opacity="1"/>
+<path d="M153 680 L432 796" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<path d="M432 680 L153 796" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<rect x="272.98" y="719.1648" width="39.04" height="29.28" rx="2" fill="none" stroke="#AEBDAA" stroke-width="2" opacity="1"/>
+<circle cx="301.4792" cy="728.144" r="2.7328" fill="#AEBDAA" stroke="none" stroke-width="1"/>
+<path d="M277.2744 743.76 l8.9792 -10.9312 l6.2464 7.0272 l6.2464 -7.0272 l10.9312 10.9312Z" fill="#AEBDAA"/>
+<rect x="159" y="769" width="126" height="23" rx="1" fill="#ffffff" stroke="none" stroke-width="1" opacity="0.84"/>
+<text x="167" y="786" fill="#AEBDAA" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="12" letter-spacing="0" text-anchor="start" opacity="1">行程照片</text>
+<text x="507" y="706" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="680" font-size="22" letter-spacing="0" text-anchor="start" opacity="1">每日目的地 / 行程标题</text>
+<rect x="507" y="723" width="280" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="507" y="744" width="243" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="507" y="765" width="205" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<text x="507" y="799" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="14" letter-spacing="0" text-anchor="start" opacity="1">日期 · 景点 · 交通 · 用餐</text>
+<path d="M54 813 L1026 813" fill="none" stroke="#D1D5C5" stroke-width="1" opacity="1" />
+<text x="904" y="877" fill="#D96541" font-family="Noto Serif CJK SC, Noto Serif, serif" font-weight="600" font-size="63" letter-spacing="0" text-anchor="start" opacity="1">02</text>
+<text x="907" y="900" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="13" letter-spacing="2" text-anchor="start" opacity="1">DAY</text>
+<rect x="596" y="830" width="285" height="122" rx="0" fill="#E5E7D8" stroke="#AEBDAA" stroke-width="1.15" opacity="1"/>
+<path d="M599 833 L878 949" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<path d="M878 833 L599 949" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<rect x="718.98" y="872.1648" width="39.04" height="29.28" rx="2" fill="none" stroke="#AEBDAA" stroke-width="2" opacity="1"/>
+<circle cx="747.4792" cy="881.144" r="2.7328" fill="#AEBDAA" stroke="none" stroke-width="1"/>
+<path d="M723.2744 896.76 l8.9792 -10.9312 l6.2464 7.0272 l6.2464 -7.0272 l10.9312 10.9312Z" fill="#AEBDAA"/>
+<rect x="605" y="922" width="126" height="23" rx="1" fill="#ffffff" stroke="none" stroke-width="1" opacity="0.84"/>
+<text x="613" y="939" fill="#AEBDAA" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="12" letter-spacing="0" text-anchor="start" opacity="1">行程照片</text>
+<text x="72" y="859" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="680" font-size="22" letter-spacing="0" text-anchor="start" opacity="1">每日目的地 / 行程标题</text>
+<rect x="72" y="876" width="280" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="72" y="897" width="243" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="72" y="918" width="205" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<text x="72" y="952" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="14" letter-spacing="0" text-anchor="start" opacity="1">日期 · 景点 · 交通 · 用餐</text>
+<path d="M54 966 L1026 966" fill="none" stroke="#D1D5C5" stroke-width="1" opacity="1" />
+<text x="55" y="1030" fill="#D96541" font-family="Noto Serif CJK SC, Noto Serif, serif" font-weight="600" font-size="63" letter-spacing="0" text-anchor="start" opacity="1">03</text>
+<text x="59" y="1053" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="13" letter-spacing="2" text-anchor="start" opacity="1">DAY</text>
+<rect x="150" y="983" width="285" height="122" rx="0" fill="#E5E7D8" stroke="#AEBDAA" stroke-width="1.15" opacity="1"/>
+<path d="M153 986 L432 1102" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<path d="M432 986 L153 1102" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<rect x="272.98" y="1025.1648" width="39.04" height="29.28" rx="2" fill="none" stroke="#AEBDAA" stroke-width="2" opacity="1"/>
+<circle cx="301.4792" cy="1034.144" r="2.7328" fill="#AEBDAA" stroke="none" stroke-width="1"/>
+<path d="M277.2744 1049.76 l8.9792 -10.9312 l6.2464 7.0272 l6.2464 -7.0272 l10.9312 10.9312Z" fill="#AEBDAA"/>
+<rect x="159" y="1075" width="126" height="23" rx="1" fill="#ffffff" stroke="none" stroke-width="1" opacity="0.84"/>
+<text x="167" y="1092" fill="#AEBDAA" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="12" letter-spacing="0" text-anchor="start" opacity="1">行程照片</text>
+<text x="507" y="1012" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="680" font-size="22" letter-spacing="0" text-anchor="start" opacity="1">每日目的地 / 行程标题</text>
+<rect x="507" y="1029" width="280" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="507" y="1050" width="243" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="507" y="1071" width="205" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<text x="507" y="1105" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="14" letter-spacing="0" text-anchor="start" opacity="1">日期 · 景点 · 交通 · 用餐</text>
+<path d="M54 1119 L1026 1119" fill="none" stroke="#D1D5C5" stroke-width="1" opacity="1" />
+<text x="904" y="1183" fill="#D96541" font-family="Noto Serif CJK SC, Noto Serif, serif" font-weight="600" font-size="63" letter-spacing="0" text-anchor="start" opacity="1">04</text>
+<text x="907" y="1206" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="13" letter-spacing="2" text-anchor="start" opacity="1">DAY</text>
+<rect x="596" y="1136" width="285" height="122" rx="0" fill="#E5E7D8" stroke="#AEBDAA" stroke-width="1.15" opacity="1"/>
+<path d="M599 1139 L878 1255" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<path d="M878 1139 L599 1255" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<rect x="718.98" y="1178.1648" width="39.04" height="29.28" rx="2" fill="none" stroke="#AEBDAA" stroke-width="2" opacity="1"/>
+<circle cx="747.4792" cy="1187.144" r="2.7328" fill="#AEBDAA" stroke="none" stroke-width="1"/>
+<path d="M723.2744 1202.76 l8.9792 -10.9312 l6.2464 7.0272 l6.2464 -7.0272 l10.9312 10.9312Z" fill="#AEBDAA"/>
+<rect x="605" y="1228" width="126" height="23" rx="1" fill="#ffffff" stroke="none" stroke-width="1" opacity="0.84"/>
+<text x="613" y="1245" fill="#AEBDAA" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="12" letter-spacing="0" text-anchor="start" opacity="1">行程照片</text>
+<text x="72" y="1165" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="680" font-size="22" letter-spacing="0" text-anchor="start" opacity="1">每日目的地 / 行程标题</text>
+<rect x="72" y="1182" width="280" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="72" y="1203" width="243" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="72" y="1224" width="205" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<text x="72" y="1258" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="14" letter-spacing="0" text-anchor="start" opacity="1">日期 · 景点 · 交通 · 用餐</text>
+<path d="M54 1272 L1026 1272" fill="none" stroke="#D1D5C5" stroke-width="1" opacity="1" />
+<text x="55" y="1336" fill="#D96541" font-family="Noto Serif CJK SC, Noto Serif, serif" font-weight="600" font-size="63" letter-spacing="0" text-anchor="start" opacity="1">05</text>
+<text x="59" y="1359" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="13" letter-spacing="2" text-anchor="start" opacity="1">DAY</text>
+<rect x="150" y="1289" width="285" height="122" rx="0" fill="#E5E7D8" stroke="#AEBDAA" stroke-width="1.15" opacity="1"/>
+<path d="M153 1292 L432 1408" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<path d="M432 1292 L153 1408" fill="none" stroke="#AEBDAA" stroke-width="0.9" opacity="0.42" />
+<rect x="272.98" y="1331.1648" width="39.04" height="29.28" rx="2" fill="none" stroke="#AEBDAA" stroke-width="2" opacity="1"/>
+<circle cx="301.4792" cy="1340.144" r="2.7328" fill="#AEBDAA" stroke="none" stroke-width="1"/>
+<path d="M277.2744 1355.76 l8.9792 -10.9312 l6.2464 7.0272 l6.2464 -7.0272 l10.9312 10.9312Z" fill="#AEBDAA"/>
+<rect x="159" y="1381" width="126" height="23" rx="1" fill="#ffffff" stroke="none" stroke-width="1" opacity="0.84"/>
+<text x="167" y="1398" fill="#AEBDAA" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="12" letter-spacing="0" text-anchor="start" opacity="1">行程照片</text>
+<text x="507" y="1318" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="680" font-size="22" letter-spacing="0" text-anchor="start" opacity="1">每日目的地 / 行程标题</text>
+<rect x="507" y="1335" width="280" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="507" y="1356" width="243" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="507" y="1377" width="205" height="8" rx="4" fill="#B9C5BC" stroke="none" stroke-width="1" opacity="1"/>
+<text x="507" y="1411" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="500" font-size="14" letter-spacing="0" text-anchor="start" opacity="1">日期 · 景点 · 交通 · 用餐</text>
+<path d="M54 1425 L1026 1425" fill="none" stroke="#D1D5C5" stroke-width="1" opacity="1" />
+<rect x="54" y="1449" width="974" height="100" rx="0" fill="#F7DFBE" stroke="none" stroke-width="1" opacity="1"/>
+<text x="81" y="1485" fill="#244B41" font-family="Noto Serif CJK SC, Noto Serif, serif" font-weight="650" font-size="25" letter-spacing="0" text-anchor="start" opacity="1">旅行须知</text>
+<text x="81" y="1517" fill="#244B41" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="400" font-size="17" letter-spacing="0" text-anchor="start" opacity="1">包含项目   /   交通提示   /   住宿信息   /   费用与备注</text>
+<text x="1027" y="1580" fill="#D96541" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-weight="700" font-size="13" letter-spacing="2" text-anchor="end" opacity="1">ZINE   ·   02</text>
+</svg>

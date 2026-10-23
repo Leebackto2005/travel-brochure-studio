@@ -1,0 +1,30 @@
+{
+  "title": "旅行行程单 · 模板示例",
+  "theme": {"frame": "#614020", "accent": "#b48c4b", "paper": "#fffefb", "text": "#46301e"},
+  "pages": [
+    {"id": "cover", "kind": "cover", "title": "请替换为已确认的封面海报", "mode": "contain", "image": {"path": "", "role": "approved-cover"}},
+    {"id": "experiences", "kind": "content", "title": "目的地体验与行程餐食", "subtitle": "Experiences & Meals", "blocks": [
+      {"type": "gallery", "title": "景点介绍", "columns": 2, "image_height_mm": 75, "items": [
+        {"image": {"path": "", "role": "attraction", "reference_label": "照片待补充 · 景点名称以行程为准"}, "caption": "景点一"},
+        {"image": {"path": "", "role": "attraction", "reference_label": "照片待补充 · 景点名称以行程为准"}, "caption": "景点二"}
+      ]},
+      {"type": "gallery", "title": "按行程安排的餐食", "columns": 3, "image_height_mm": 45, "items": [
+        {"image": {"path": "", "role": "meal-reference", "reference_label": "餐食风格参考，非固定菜单"}, "caption": "早餐类别待填写"},
+        {"image": {"path": "", "role": "meal-reference", "reference_label": "餐食风格参考，非固定菜单"}, "caption": "午餐类别待填写"},
+        {"image": {"path": "", "role": "meal-reference", "reference_label": "餐食风格参考，非固定菜单"}, "caption": "晚餐类别待填写"}
+      ]},
+      {"type": "notice", "title": "资料填写说明", "paragraphs": ["根据行程原文填写餐食类别及费用归属；没有确认的内容留待补充，不将图片中的菜品写成已含菜单。"]}
+    ]},
+    {"id": "hotels", "kind": "content", "title": "住宿参考", "subtitle": "Hotel Options", "blocks": [
+      {"type": "hotels", "image_height_mm": 65, "items": [
+        {"name": "参考酒店一", "en": "Hotel name pending", "exterior": {"path": "", "role": "hotel-exterior", "reference_label": "外观图片待补充"}, "room": {"path": "", "role": "hotel-room", "reference_label": "房型图片待补充"}, "room_caption": "房型待确认"},
+        {"name": "参考酒店二", "en": "Hotel name pending", "exterior": {"path": "", "role": "hotel-exterior", "reference_label": "外观图片待补充"}, "room": {"path": "", "role": "hotel-room", "reference_label": "房型图片待补充"}, "room_caption": "房型待确认"}
+      ], "note": "酒店资料仅供参考；是否入住、房型及住宿标准以确认后的行程和合同为准。"}
+    ]},
+    {"id": "days", "kind": "content", "title": "每日行程", "subtitle": "Daily Itinerary", "blocks": [
+      {"type": "day", "day": 1, "title": "抵达日 · 行程待填写", "paragraphs": ["此处逐段放入经确认的行程原文。确认去程航线、时刻后，将 flight 对象放在本日中，工具会将其显示在日标题下。"], "meals": {}, "hotel": "住宿安排待确认"},
+      {"type": "day", "day": 2, "title": "返程日 · 行程待填写", "paragraphs": ["此处逐段放入经确认的行程原文。未确认的航班号、价格、餐食及酒店安排不自动补写。"], "meals": {}, "hotel": "住宿安排待确认"},
+      {"type": "table", "headers": ["资料项目", "确认情况"], "rows": [["往返交通", "待填写"], ["用餐与住宿", "待填写"]]}
+    ]}
+  ]
+}

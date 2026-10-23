@@ -1,0 +1,4 @@
+python-pptx>=1.0
+Pillow>=10
+PyMuPDF>=1.24
+beautifulsoup4>=4.12

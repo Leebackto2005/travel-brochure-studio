@@ -1,0 +1,17 @@
+{
+  "template_sha256": "ec1eec436630e9108547404a4a262a4d929828af65029eb33c0861dfa477005f",
+  "template_size": [
+    1080.0,
+    1600.0
+  ],
+  "geometry": "Original SVG positions and sizes retained; no reflow",
+  "font_mapping": {
+    "Noto Sans CJK SC": "Microsoft YaHei",
+    "Noto Serif CJK SC": "SimSun (CJK) / Georgia (Latin)",
+    "note": "Original fonts absent on this machine; glyph appearance differs; geometry remains fixed"
+  },
+  "text_changes": {},
+  "body_changes": {},
+  "photos": [],
+  "visual_review": "required"
+}

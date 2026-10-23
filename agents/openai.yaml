@@ -1,0 +1,4 @@
+interface:
+  display_name: "旅游宣传册设计工坊"
+  short_description: "旅游宣传册模板与局部修订，支持授权后的HTML转PDF和指定页核验"
+  default_prompt: "使用 $travel-brochure-studio，按已选模板与确认事实整理行程和照片，保留完整正文。默认走PPTX/PDF；用户授权HTML转PDF或续改现有HTML时走对应工具，不额外增加格式。局部修改后核对未改页面，并分别报告渲染、视觉与业务核验。"

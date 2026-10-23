@@ -1,0 +1,259 @@
+{
+  "schema": "travel-brochure/v1",
+  "title": "海岛慢旅行",
+  "style": "editorial",
+  "sources": [],
+  "assets": [
+    {
+      "id": "hero",
+      "path": null,
+      "label": "目的地主视觉",
+      "source": "待补充真实素材",
+      "verified": false,
+      "fit": "cover",
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "detail",
+      "path": null,
+      "label": "旅行细节",
+      "source": "待补充真实素材",
+      "verified": false,
+      "fit": "cover",
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "a",
+      "path": null,
+      "label": "主推景点 A",
+      "source": "待补充真实素材",
+      "verified": false,
+      "fit": "cover",
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "b",
+      "path": null,
+      "label": "主推景点 B",
+      "source": "待补充真实素材",
+      "verified": false,
+      "fit": "cover",
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "c",
+      "path": null,
+      "label": "文化体验",
+      "source": "待补充真实素材",
+      "verified": false,
+      "fit": "cover",
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "d",
+      "path": null,
+      "label": "自然风景",
+      "source": "待补充真实素材",
+      "verified": false,
+      "fit": "cover",
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "ext",
+      "path": null,
+      "label": "酒店外观",
+      "source": "待补充真实素材",
+      "verified": false,
+      "fit": "cover",
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "room",
+      "path": null,
+      "label": "双床房内饰",
+      "source": "待补充真实素材",
+      "verified": false,
+      "fit": "cover",
+      "focus": [
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "type": "cover",
+      "title": "海岛慢旅行",
+      "en": "A JOURNEY, DAY BY DAY",
+      "asset": "hero",
+      "secondary_asset": "detail",
+      "highlights": [
+        "可编辑示例 · 非正式产品",
+        "按实际行程填写天数和出发信息",
+        "原生文字 / 真实照片 / 双语对照"
+      ]
+    },
+    {
+      "type": "overview",
+      "title": "把旅程写进日常",
+      "en": "JOURNEY AT A GLANCE",
+      "items": [
+        {
+          "title": "主推景点 A",
+          "en": "Destination photograph",
+          "asset": "a",
+          "note": "照片与产品内容核对后替换"
+        },
+        {
+          "title": "主推景点 B",
+          "en": "Destination photograph",
+          "asset": "b",
+          "note": "照片与产品内容核对后替换"
+        },
+        {
+          "title": "文化体验",
+          "en": "Destination photograph",
+          "asset": "c",
+          "note": "照片与产品内容核对后替换"
+        },
+        {
+          "title": "自然风景",
+          "en": "Destination photograph",
+          "asset": "d",
+          "note": "照片与产品内容核对后替换"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "精选旅行体验",
+      "en": "SELECTED EXPERIENCES",
+      "paired_featured": true,
+      "items": [
+        {
+          "title": "主推景点 A",
+          "en": "Destination photograph",
+          "asset": "a",
+          "note": "照片与产品内容核对后替换"
+        },
+        {
+          "title": "主推景点 B",
+          "en": "Destination photograph",
+          "asset": "b",
+          "note": "照片与产品内容核对后替换"
+        },
+        {
+          "title": "文化体验",
+          "en": "Destination photograph",
+          "asset": "c",
+          "note": "照片与产品内容核对后替换"
+        },
+        {
+          "title": "自然风景",
+          "en": "Destination photograph",
+          "asset": "d",
+          "note": "照片与产品内容核对后替换"
+        }
+      ]
+    },
+    {
+      "type": "hotels",
+      "title": "休息，也是风景",
+      "en": "REST & STAY",
+      "items": [
+        {
+          "title": "备选酒店名称",
+          "en": "Hotel option — to be confirmed",
+          "exterior": "ext",
+          "room": "room",
+          "room_label": "外观与双床房须为同一家酒店 / Matching exterior and twin room"
+        },
+        {
+          "title": "第二家备选酒店",
+          "en": "Second hotel option",
+          "exterior": "ext",
+          "room": "room",
+          "room_label": "实际房型及入住安排以最终确认为准 / Subject to confirmation"
+        }
+      ]
+    },
+    {
+      "type": "itinerary",
+      "title": "每日行程",
+      "en": "THE DAILY PLAN",
+      "days": [
+        {
+          "day": 1,
+          "title": "抵达目的地",
+          "en_title": "Arrival",
+          "zh": "这里放置已确认的中文行程。保留景点顺序、用餐安排与必要条件；英文紧随其下。",
+          "en": "Place the confirmed itinerary here. Preserve the order of visits, meal arrangements and all applicable conditions.",
+          "asset": "a",
+          "flight": "航班信息待填 / Flight details to be confirmed",
+          "meal_zh": "餐食按最终行程安排",
+          "meal_en": "Meals as specified in the confirmed itinerary.",
+          "hotel_zh": "住宿待确认",
+          "hotel_en": "Accommodation to be confirmed."
+        },
+        {
+          "day": 2,
+          "title": "探索与体验",
+          "en_title": "Explore & discover",
+          "zh": "这里放置已确认的中文行程。保留景点顺序、用餐安排与必要条件；英文紧随其下。",
+          "en": "Place the confirmed itinerary here. Preserve the order of visits, meal arrangements and all applicable conditions.",
+          "asset": "b",
+          "flight": "航班信息待填 / Flight details to be confirmed",
+          "meal_zh": "餐食按最终行程安排",
+          "meal_en": "Meals as specified in the confirmed itinerary.",
+          "hotel_zh": "住宿待确认",
+          "hotel_en": "Accommodation to be confirmed."
+        }
+      ]
+    },
+    {
+      "type": "terms",
+      "title": "出行须知",
+      "en": "TRAVEL ESSENTIALS",
+      "rows": [
+        {
+          "label": "费用包含 / Inclusions",
+          "zh": "以最终确认的产品内容为准。",
+          "en": "Subject to the confirmed package details."
+        },
+        {
+          "label": "自费项目 / Optional activities",
+          "zh": "自愿参加，费用自理。",
+          "en": "Participation is voluntary and at your own expense."
+        },
+        {
+          "label": "住宿 / Accommodation",
+          "zh": "酒店及房型以最终确认为准。",
+          "en": "Hotels and room types are subject to final confirmation."
+        }
+      ],
+      "notice_zh": "行程内容若有分歧，以中文版为准。",
+      "notice_en": "In case of any discrepancy between the Chinese and English versions of the itinerary, the Chinese version shall prevail."
+    }
+  ]
+}

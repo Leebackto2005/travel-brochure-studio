@@ -1,0 +1,757 @@
+{
+  "template": "assets/reference-shapes/01_旅行编辑_Editorial.svg",
+  "sha256": "454ff6da8b473d9395be7bafe814bb5a61587c38a87ac1543aa3c2e77b106f12",
+  "width": 1080.0,
+  "height": 1600.0,
+  "texts": [
+    {
+      "id": "text-01",
+      "element": 3,
+      "text": "TRAVEL / EDITION 01",
+      "x": 62.0,
+      "y": 42.44,
+      "width": 280.108,
+      "height": 27.2,
+      "font_size": 16.0,
+      "anchor": "start",
+      "baseline": 57.0
+    },
+    {
+      "id": "text-02",
+      "element": 4,
+      "text": "ITINERARY  ·  2026",
+      "x": 822.365,
+      "y": 43.35,
+      "width": 200.635,
+      "height": 25.5,
+      "font_size": 15.0,
+      "anchor": "end",
+      "baseline": 57.0
+    },
+    {
+      "id": "text-03",
+      "element": 6,
+      "text": "五日旅程",
+      "x": 62.0,
+      "y": 95.57,
+      "width": 385.6,
+      "height": 124.1,
+      "font_size": 73.0,
+      "anchor": "start",
+      "baseline": 162.0
+    },
+    {
+      "id": "text-04",
+      "element": 7,
+      "text": "A JOURNEY, DAY BY DAY",
+      "x": 65.0,
+      "y": 195.89,
+      "width": 401.46000000000004,
+      "height": 35.699999999999996,
+      "font_size": 21.0,
+      "anchor": "start",
+      "baseline": 215.0
+    },
+    {
+      "id": "text-05",
+      "element": 8,
+      "text": "05",
+      "x": 860.3199999999999,
+      "y": 56.64,
+      "width": 159.68,
+      "height": 163.2,
+      "font_size": 96.0,
+      "anchor": "end",
+      "baseline": 144.0
+    },
+    {
+      "id": "text-06",
+      "element": 9,
+      "text": "DAYS  /  04 NIGHTS",
+      "x": 785.795,
+      "y": 162.44,
+      "width": 234.205,
+      "height": 27.2,
+      "font_size": 16.0,
+      "anchor": "end",
+      "baseline": 177.0
+    },
+    {
+      "id": "text-07",
+      "element": 17,
+      "text": "主视觉 / 图片占位",
+      "x": 79.0,
+      "y": 460.08,
+      "width": 131.2,
+      "height": 20.4,
+      "font_size": 12.0,
+      "anchor": "start",
+      "baseline": 471.0
+    },
+    {
+      "id": "text-08",
+      "element": 18,
+      "text": "旅程概要  /  OVERVIEW",
+      "x": 713.0,
+      "y": 255.8,
+      "width": 294.09000000000003,
+      "height": 34.0,
+      "font_size": 20.0,
+      "anchor": "start",
+      "baseline": 274.0
+    },
+    {
+      "id": "text-09",
+      "element": 20,
+      "text": "出发地  →  目的地",
+      "x": 714.0,
+      "y": 306.07,
+      "width": 248.64000000000001,
+      "height": 39.1,
+      "font_size": 23.0,
+      "anchor": "start",
+      "baseline": 327.0
+    },
+    {
+      "id": "text-10",
+      "element": 24,
+      "text": "航班信息",
+      "x": 732.72,
+      "y": 409.22,
+      "width": 74.56,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "middle",
+      "baseline": 421.05
+    },
+    {
+      "id": "text-11",
+      "element": 26,
+      "text": "住宿",
+      "x": 862.36,
+      "y": 409.22,
+      "width": 41.28,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "middle",
+      "baseline": 421.05
+    },
+    {
+      "id": "text-12",
+      "element": 27,
+      "text": "※ 在这里替换行程摘要 / 团号 / 日期",
+      "x": 714.0,
+      "y": 453.26,
+      "width": 298.56,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 466.0
+    },
+    {
+      "id": "text-13",
+      "element": 29,
+      "text": "DAILY ITINERARY",
+      "x": 62.0,
+      "y": 537.07,
+      "width": 287.635,
+      "height": 39.1,
+      "font_size": 23.0,
+      "anchor": "start",
+      "baseline": 558.0
+    },
+    {
+      "id": "text-14",
+      "element": 30,
+      "text": "精选亮点  /  HIGHLIGHTS",
+      "x": 713.0,
+      "y": 538.89,
+      "width": 333.44,
+      "height": 35.699999999999996,
+      "font_size": 21.0,
+      "anchor": "start",
+      "baseline": 558.0
+    },
+    {
+      "id": "text-15",
+      "element": 32,
+      "text": "01",
+      "x": 62.0,
+      "y": 596.77,
+      "width": 91.84,
+      "height": 90.1,
+      "font_size": 53.0,
+      "anchor": "start",
+      "baseline": 645.0
+    },
+    {
+      "id": "text-16",
+      "element": 33,
+      "text": "DAY",
+      "x": 62.0,
+      "y": 659.53,
+      "width": 60.253,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 675.0
+    },
+    {
+      "id": "text-17",
+      "element": 40,
+      "text": "今日行程标题",
+      "x": 374.0,
+      "y": 609.07,
+      "width": 184.64000000000001,
+      "height": 39.1,
+      "font_size": 23.0,
+      "anchor": "start",
+      "baseline": 630.0
+    },
+    {
+      "id": "text-18",
+      "element": 44,
+      "text": "航班 / 用餐 / 酒店",
+      "x": 374.0,
+      "y": 715.26,
+      "width": 152.64000000000001,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 728.0
+    },
+    {
+      "id": "text-19",
+      "element": 46,
+      "text": "02",
+      "x": 62.0,
+      "y": 767.77,
+      "width": 91.84,
+      "height": 90.1,
+      "font_size": 53.0,
+      "anchor": "start",
+      "baseline": 816.0
+    },
+    {
+      "id": "text-20",
+      "element": 47,
+      "text": "DAY",
+      "x": 62.0,
+      "y": 830.53,
+      "width": 60.253,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 846.0
+    },
+    {
+      "id": "text-21",
+      "element": 54,
+      "text": "今日行程标题",
+      "x": 374.0,
+      "y": 780.07,
+      "width": 184.64000000000001,
+      "height": 39.1,
+      "font_size": 23.0,
+      "anchor": "start",
+      "baseline": 801.0
+    },
+    {
+      "id": "text-22",
+      "element": 58,
+      "text": "航班 / 用餐 / 酒店",
+      "x": 374.0,
+      "y": 886.26,
+      "width": 152.64000000000001,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 899.0
+    },
+    {
+      "id": "text-23",
+      "element": 60,
+      "text": "03",
+      "x": 62.0,
+      "y": 938.77,
+      "width": 91.84,
+      "height": 90.1,
+      "font_size": 53.0,
+      "anchor": "start",
+      "baseline": 987.0
+    },
+    {
+      "id": "text-24",
+      "element": 61,
+      "text": "DAY",
+      "x": 62.0,
+      "y": 1001.53,
+      "width": 60.253,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 1017.0
+    },
+    {
+      "id": "text-25",
+      "element": 68,
+      "text": "今日行程标题",
+      "x": 374.0,
+      "y": 951.07,
+      "width": 184.64000000000001,
+      "height": 39.1,
+      "font_size": 23.0,
+      "anchor": "start",
+      "baseline": 972.0
+    },
+    {
+      "id": "text-26",
+      "element": 72,
+      "text": "航班 / 用餐 / 酒店",
+      "x": 374.0,
+      "y": 1057.26,
+      "width": 152.64000000000001,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 1070.0
+    },
+    {
+      "id": "text-27",
+      "element": 74,
+      "text": "04",
+      "x": 62.0,
+      "y": 1109.77,
+      "width": 91.84,
+      "height": 90.1,
+      "font_size": 53.0,
+      "anchor": "start",
+      "baseline": 1158.0
+    },
+    {
+      "id": "text-28",
+      "element": 75,
+      "text": "DAY",
+      "x": 62.0,
+      "y": 1172.53,
+      "width": 60.253,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 1188.0
+    },
+    {
+      "id": "text-29",
+      "element": 82,
+      "text": "今日行程标题",
+      "x": 374.0,
+      "y": 1122.07,
+      "width": 184.64000000000001,
+      "height": 39.1,
+      "font_size": 23.0,
+      "anchor": "start",
+      "baseline": 1143.0
+    },
+    {
+      "id": "text-30",
+      "element": 86,
+      "text": "航班 / 用餐 / 酒店",
+      "x": 374.0,
+      "y": 1228.26,
+      "width": 152.64000000000001,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 1241.0
+    },
+    {
+      "id": "text-31",
+      "element": 88,
+      "text": "05",
+      "x": 62.0,
+      "y": 1280.77,
+      "width": 91.84,
+      "height": 90.1,
+      "font_size": 53.0,
+      "anchor": "start",
+      "baseline": 1329.0
+    },
+    {
+      "id": "text-32",
+      "element": 89,
+      "text": "DAY",
+      "x": 62.0,
+      "y": 1343.53,
+      "width": 60.253,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 1359.0
+    },
+    {
+      "id": "text-33",
+      "element": 96,
+      "text": "今日行程标题",
+      "x": 374.0,
+      "y": 1293.07,
+      "width": 184.64000000000001,
+      "height": 39.1,
+      "font_size": 23.0,
+      "anchor": "start",
+      "baseline": 1314.0
+    },
+    {
+      "id": "text-34",
+      "element": 100,
+      "text": "航班 / 用餐 / 酒店",
+      "x": 374.0,
+      "y": 1399.26,
+      "width": 152.64000000000001,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 1412.0
+    },
+    {
+      "id": "text-35",
+      "element": 102,
+      "text": "01",
+      "x": 713.0,
+      "y": 591.97,
+      "width": 59.84,
+      "height": 56.1,
+      "font_size": 33.0,
+      "anchor": "start",
+      "baseline": 622.0
+    },
+    {
+      "id": "text-36",
+      "element": 114,
+      "text": "02",
+      "x": 713.0,
+      "y": 771.97,
+      "width": 59.84,
+      "height": 56.1,
+      "font_size": 33.0,
+      "anchor": "start",
+      "baseline": 802.0
+    },
+    {
+      "id": "text-37",
+      "element": 126,
+      "text": "03",
+      "x": 713.0,
+      "y": 951.97,
+      "width": 59.84,
+      "height": 56.1,
+      "font_size": 33.0,
+      "anchor": "start",
+      "baseline": 982.0
+    },
+    {
+      "id": "text-38",
+      "element": 139,
+      "text": "出行备忘",
+      "x": 736.0,
+      "y": 1169.07,
+      "width": 125.76,
+      "height": 39.1,
+      "font_size": 23.0,
+      "anchor": "start",
+      "baseline": 1190.0
+    },
+    {
+      "id": "text-39",
+      "element": 140,
+      "text": "ESSENTIAL NOTES",
+      "x": 736.0,
+      "y": 1207.08,
+      "width": 179.574,
+      "height": 20.4,
+      "font_size": 12.0,
+      "anchor": "start",
+      "baseline": 1218.0
+    },
+    {
+      "id": "text-40",
+      "element": 142,
+      "text": "航班与出发时间",
+      "x": 759.0,
+      "y": 1234.53,
+      "width": 160.32,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 1250.0
+    },
+    {
+      "id": "text-41",
+      "element": 145,
+      "text": "行李及住宿安排",
+      "x": 759.0,
+      "y": 1278.53,
+      "width": 160.32,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 1294.0
+    },
+    {
+      "id": "text-42",
+      "element": 148,
+      "text": "包含 / 不包含项目",
+      "x": 759.0,
+      "y": 1322.53,
+      "width": 182.4,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 1338.0
+    },
+    {
+      "id": "text-43",
+      "element": 151,
+      "text": "联系方式与其他",
+      "x": 759.0,
+      "y": 1366.53,
+      "width": 160.32,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 1382.0
+    },
+    {
+      "id": "text-44",
+      "element": 154,
+      "text": "T R A V E L   J O U R N A L",
+      "x": 62.0,
+      "y": 1521.44,
+      "width": 340.48,
+      "height": 27.2,
+      "font_size": 16.0,
+      "anchor": "start",
+      "baseline": 1536.0
+    },
+    {
+      "id": "text-45",
+      "element": 155,
+      "text": "可编辑空白模板   /   01",
+      "x": 824.12,
+      "y": 1523.26,
+      "width": 194.88,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "end",
+      "baseline": 1536.0
+    }
+  ],
+  "photos": [
+    {
+      "id": "photo-01",
+      "element": 10,
+      "x": 62.0,
+      "y": 260.0,
+      "width": 612.0,
+      "height": 224.0
+    },
+    {
+      "id": "photo-02",
+      "element": 34,
+      "x": 166.0,
+      "y": 604.0,
+      "width": 186.0,
+      "height": 136.0
+    },
+    {
+      "id": "photo-03",
+      "element": 48,
+      "x": 166.0,
+      "y": 775.0,
+      "width": 186.0,
+      "height": 136.0
+    },
+    {
+      "id": "photo-04",
+      "element": 62,
+      "x": 166.0,
+      "y": 946.0,
+      "width": 186.0,
+      "height": 136.0
+    },
+    {
+      "id": "photo-05",
+      "element": 76,
+      "x": 166.0,
+      "y": 1117.0,
+      "width": 186.0,
+      "height": 136.0
+    },
+    {
+      "id": "photo-06",
+      "element": 90,
+      "x": 166.0,
+      "y": 1288.0,
+      "width": 186.0,
+      "height": 136.0
+    },
+    {
+      "id": "photo-07",
+      "element": 103,
+      "x": 768.0,
+      "y": 595.0,
+      "width": 118.0,
+      "height": 116.0
+    },
+    {
+      "id": "photo-08",
+      "element": 115,
+      "x": 768.0,
+      "y": 775.0,
+      "width": 118.0,
+      "height": 116.0
+    },
+    {
+      "id": "photo-09",
+      "element": 127,
+      "x": 768.0,
+      "y": 955.0,
+      "width": 118.0,
+      "height": 116.0
+    }
+  ],
+  "bodies": [
+    {
+      "id": "body-01",
+      "elements": [
+        21,
+        22
+      ],
+      "x": 714.0,
+      "y": 346.0,
+      "width": 277.0,
+      "height": 38.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-02",
+      "elements": [
+        41,
+        42,
+        43
+      ],
+      "x": 374.0,
+      "y": 646.0,
+      "width": 256.0,
+      "height": 59.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-03",
+      "elements": [
+        55,
+        56,
+        57
+      ],
+      "x": 374.0,
+      "y": 817.0,
+      "width": 256.0,
+      "height": 59.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-04",
+      "elements": [
+        69,
+        70,
+        71
+      ],
+      "x": 374.0,
+      "y": 988.0,
+      "width": 256.0,
+      "height": 59.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-05",
+      "elements": [
+        83,
+        84,
+        85
+      ],
+      "x": 374.0,
+      "y": 1159.0,
+      "width": 256.0,
+      "height": 59.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-06",
+      "elements": [
+        97,
+        98,
+        99
+      ],
+      "x": 374.0,
+      "y": 1330.0,
+      "width": 256.0,
+      "height": 59.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-07",
+      "elements": [
+        109,
+        110,
+        111,
+        112
+      ],
+      "x": 901.0,
+      "y": 606.0,
+      "width": 116.0,
+      "height": 82.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-08",
+      "elements": [
+        121,
+        122,
+        123,
+        124
+      ],
+      "x": 901.0,
+      "y": 786.0,
+      "width": 116.0,
+      "height": 82.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-09",
+      "elements": [
+        133,
+        134,
+        135,
+        136
+      ],
+      "x": 901.0,
+      "y": 966.0,
+      "width": 116.0,
+      "height": 82.0,
+      "font_size": 14,
+      "color": "192934"
+    }
+  ],
+  "font_mapping": {
+    "Noto Sans CJK SC": "Microsoft YaHei",
+    "Noto Serif CJK SC": "SimSun (CJK) / Georgia (Latin)",
+    "note": "Original fonts absent on this machine; glyph appearance differs; geometry remains fixed"
+  }
+}

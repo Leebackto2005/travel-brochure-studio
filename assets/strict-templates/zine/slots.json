@@ -1,0 +1,671 @@
+{
+  "template": "assets/reference-shapes/02_旅行手记_Zine.svg",
+  "sha256": "ec1eec436630e9108547404a4a262a4d929828af65029eb33c0861dfa477005f",
+  "width": 1080.0,
+  "height": 1600.0,
+  "texts": [
+    {
+      "id": "text-01",
+      "element": 3,
+      "text": "JOURNEY",
+      "x": 54.0,
+      "y": 41.15,
+      "width": 255.04,
+      "height": 59.5,
+      "font_size": 35.0,
+      "anchor": "start",
+      "baseline": 73.0
+    },
+    {
+      "id": "text-02",
+      "element": 4,
+      "text": "旅行手记   /   TRAVEL ZINE",
+      "x": 54.0,
+      "y": 91.53,
+      "width": 341.42,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 107.0
+    },
+    {
+      "id": "text-03",
+      "element": 6,
+      "text": "05",
+      "x": 935.72,
+      "y": 32.879999999999995,
+      "width": 58.56,
+      "height": 54.4,
+      "font_size": 32.0,
+      "anchor": "middle",
+      "baseline": 62.0
+    },
+    {
+      "id": "text-04",
+      "element": 7,
+      "text": "DAYS",
+      "x": 940.786,
+      "y": 75.9,
+      "width": 48.428000000000004,
+      "height": 17.0,
+      "font_size": 10.0,
+      "anchor": "middle",
+      "baseline": 85.0
+    },
+    {
+      "id": "text-05",
+      "element": 9,
+      "text": "把旅程写进日常",
+      "x": 54.0,
+      "y": 144.76999999999998,
+      "width": 482.88,
+      "height": 90.1,
+      "font_size": 53.0,
+      "anchor": "start",
+      "baseline": 193.0
+    },
+    {
+      "id": "text-06",
+      "element": 10,
+      "text": "五天四晚 · 线路名称 / 出发日期 / 旅程概览",
+      "x": 54.0,
+      "y": 208.62,
+      "width": 442.24,
+      "height": 30.599999999999998,
+      "font_size": 18.0,
+      "anchor": "start",
+      "baseline": 225.0
+    },
+    {
+      "id": "text-07",
+      "element": 18,
+      "text": "封面照片占位",
+      "x": 71.0,
+      "y": 449.08,
+      "width": 100.16,
+      "height": 20.4,
+      "font_size": 12.0,
+      "anchor": "start",
+      "baseline": 460.0
+    },
+    {
+      "id": "text-08",
+      "element": 26,
+      "text": "次要照片",
+      "x": 754.0,
+      "y": 449.08,
+      "width": 69.44,
+      "height": 20.4,
+      "font_size": 12.0,
+      "anchor": "start",
+      "baseline": 460.0
+    },
+    {
+      "id": "text-09",
+      "element": 28,
+      "text": "ROUTE  /  行程路线",
+      "x": 80.0,
+      "y": 506.71,
+      "width": 251.003,
+      "height": 32.3,
+      "font_size": 19.0,
+      "anchor": "start",
+      "baseline": 524.0
+    },
+    {
+      "id": "text-10",
+      "element": 31,
+      "text": "01",
+      "x": 225.76,
+      "y": 562.17,
+      "width": 28.48,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "middle",
+      "baseline": 574.0
+    },
+    {
+      "id": "text-11",
+      "element": 33,
+      "text": "02",
+      "x": 386.76,
+      "y": 562.17,
+      "width": 28.48,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "middle",
+      "baseline": 574.0
+    },
+    {
+      "id": "text-12",
+      "element": 35,
+      "text": "03",
+      "x": 547.76,
+      "y": 562.17,
+      "width": 28.48,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "middle",
+      "baseline": 574.0
+    },
+    {
+      "id": "text-13",
+      "element": 37,
+      "text": "04",
+      "x": 708.76,
+      "y": 562.17,
+      "width": 28.48,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "middle",
+      "baseline": 574.0
+    },
+    {
+      "id": "text-14",
+      "element": 39,
+      "text": "05",
+      "x": 869.76,
+      "y": 562.17,
+      "width": 28.48,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "middle",
+      "baseline": 574.0
+    },
+    {
+      "id": "text-15",
+      "element": 40,
+      "text": "5 DAYS",
+      "x": 80.0,
+      "y": 559.26,
+      "width": 82.845,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 572.0
+    },
+    {
+      "id": "text-16",
+      "element": 41,
+      "text": "DAILY FIELD NOTES",
+      "x": 54.0,
+      "y": 615.43,
+      "width": 389.44,
+      "height": 45.9,
+      "font_size": 27.0,
+      "anchor": "start",
+      "baseline": 640.0
+    },
+    {
+      "id": "text-17",
+      "element": 43,
+      "text": "01",
+      "x": 55.0,
+      "y": 666.67,
+      "width": 104.0,
+      "height": 107.1,
+      "font_size": 63.0,
+      "anchor": "start",
+      "baseline": 724.0
+    },
+    {
+      "id": "text-18",
+      "element": 44,
+      "text": "DAY",
+      "x": 59.0,
+      "y": 735.17,
+      "width": 49.575,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "start",
+      "baseline": 747.0
+    },
+    {
+      "id": "text-19",
+      "element": 52,
+      "text": "行程照片",
+      "x": 167.0,
+      "y": 775.08,
+      "width": 69.44,
+      "height": 20.4,
+      "font_size": 12.0,
+      "anchor": "start",
+      "baseline": 786.0
+    },
+    {
+      "id": "text-20",
+      "element": 53,
+      "text": "每日目的地 / 行程标题",
+      "x": 507.0,
+      "y": 685.98,
+      "width": 291.52,
+      "height": 37.4,
+      "font_size": 22.0,
+      "anchor": "start",
+      "baseline": 706.0
+    },
+    {
+      "id": "text-21",
+      "element": 57,
+      "text": "日期 · 景点 · 交通 · 用餐",
+      "x": 507.0,
+      "y": 786.26,
+      "width": 196.48,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 799.0
+    },
+    {
+      "id": "text-22",
+      "element": 59,
+      "text": "02",
+      "x": 904.0,
+      "y": 819.67,
+      "width": 115.2,
+      "height": 107.1,
+      "font_size": 63.0,
+      "anchor": "start",
+      "baseline": 877.0
+    },
+    {
+      "id": "text-23",
+      "element": 60,
+      "text": "DAY",
+      "x": 907.0,
+      "y": 888.17,
+      "width": 49.575,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "start",
+      "baseline": 900.0
+    },
+    {
+      "id": "text-24",
+      "element": 68,
+      "text": "行程照片",
+      "x": 613.0,
+      "y": 928.08,
+      "width": 69.44,
+      "height": 20.4,
+      "font_size": 12.0,
+      "anchor": "start",
+      "baseline": 939.0
+    },
+    {
+      "id": "text-25",
+      "element": 69,
+      "text": "每日目的地 / 行程标题",
+      "x": 72.0,
+      "y": 838.98,
+      "width": 291.52,
+      "height": 37.4,
+      "font_size": 22.0,
+      "anchor": "start",
+      "baseline": 859.0
+    },
+    {
+      "id": "text-26",
+      "element": 73,
+      "text": "日期 · 景点 · 交通 · 用餐",
+      "x": 72.0,
+      "y": 939.26,
+      "width": 196.48,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 952.0
+    },
+    {
+      "id": "text-27",
+      "element": 75,
+      "text": "03",
+      "x": 55.0,
+      "y": 972.67,
+      "width": 114.88,
+      "height": 107.1,
+      "font_size": 63.0,
+      "anchor": "start",
+      "baseline": 1030.0
+    },
+    {
+      "id": "text-28",
+      "element": 76,
+      "text": "DAY",
+      "x": 59.0,
+      "y": 1041.17,
+      "width": 49.575,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "start",
+      "baseline": 1053.0
+    },
+    {
+      "id": "text-29",
+      "element": 84,
+      "text": "行程照片",
+      "x": 167.0,
+      "y": 1081.08,
+      "width": 69.44,
+      "height": 20.4,
+      "font_size": 12.0,
+      "anchor": "start",
+      "baseline": 1092.0
+    },
+    {
+      "id": "text-30",
+      "element": 85,
+      "text": "每日目的地 / 行程标题",
+      "x": 507.0,
+      "y": 991.98,
+      "width": 291.52,
+      "height": 37.4,
+      "font_size": 22.0,
+      "anchor": "start",
+      "baseline": 1012.0
+    },
+    {
+      "id": "text-31",
+      "element": 89,
+      "text": "日期 · 景点 · 交通 · 用餐",
+      "x": 507.0,
+      "y": 1092.26,
+      "width": 196.48,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 1105.0
+    },
+    {
+      "id": "text-32",
+      "element": 91,
+      "text": "04",
+      "x": 904.0,
+      "y": 1125.67,
+      "width": 117.12,
+      "height": 107.1,
+      "font_size": 63.0,
+      "anchor": "start",
+      "baseline": 1183.0
+    },
+    {
+      "id": "text-33",
+      "element": 92,
+      "text": "DAY",
+      "x": 907.0,
+      "y": 1194.17,
+      "width": 49.575,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "start",
+      "baseline": 1206.0
+    },
+    {
+      "id": "text-34",
+      "element": 100,
+      "text": "行程照片",
+      "x": 613.0,
+      "y": 1234.08,
+      "width": 69.44,
+      "height": 20.4,
+      "font_size": 12.0,
+      "anchor": "start",
+      "baseline": 1245.0
+    },
+    {
+      "id": "text-35",
+      "element": 101,
+      "text": "每日目的地 / 行程标题",
+      "x": 72.0,
+      "y": 1144.98,
+      "width": 291.52,
+      "height": 37.4,
+      "font_size": 22.0,
+      "anchor": "start",
+      "baseline": 1165.0
+    },
+    {
+      "id": "text-36",
+      "element": 105,
+      "text": "日期 · 景点 · 交通 · 用餐",
+      "x": 72.0,
+      "y": 1245.26,
+      "width": 196.48,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 1258.0
+    },
+    {
+      "id": "text-37",
+      "element": 107,
+      "text": "05",
+      "x": 55.0,
+      "y": 1278.67,
+      "width": 112.96000000000001,
+      "height": 107.1,
+      "font_size": 63.0,
+      "anchor": "start",
+      "baseline": 1336.0
+    },
+    {
+      "id": "text-38",
+      "element": 108,
+      "text": "DAY",
+      "x": 59.0,
+      "y": 1347.17,
+      "width": 49.575,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "start",
+      "baseline": 1359.0
+    },
+    {
+      "id": "text-39",
+      "element": 116,
+      "text": "行程照片",
+      "x": 167.0,
+      "y": 1387.08,
+      "width": 69.44,
+      "height": 20.4,
+      "font_size": 12.0,
+      "anchor": "start",
+      "baseline": 1398.0
+    },
+    {
+      "id": "text-40",
+      "element": 117,
+      "text": "每日目的地 / 行程标题",
+      "x": 507.0,
+      "y": 1297.98,
+      "width": 291.52,
+      "height": 37.4,
+      "font_size": 22.0,
+      "anchor": "start",
+      "baseline": 1318.0
+    },
+    {
+      "id": "text-41",
+      "element": 121,
+      "text": "日期 · 景点 · 交通 · 用餐",
+      "x": 507.0,
+      "y": 1398.26,
+      "width": 196.48,
+      "height": 23.8,
+      "font_size": 14.0,
+      "anchor": "start",
+      "baseline": 1411.0
+    },
+    {
+      "id": "text-42",
+      "element": 124,
+      "text": "旅行须知",
+      "x": 81.0,
+      "y": 1462.25,
+      "width": 136.0,
+      "height": 42.5,
+      "font_size": 25.0,
+      "anchor": "start",
+      "baseline": 1485.0
+    },
+    {
+      "id": "text-43",
+      "element": 125,
+      "text": "包含项目   /   交通提示   /   住宿信息   /   费用与备注",
+      "x": 81.0,
+      "y": 1501.53,
+      "width": 520.96,
+      "height": 28.9,
+      "font_size": 17.0,
+      "anchor": "start",
+      "baseline": 1517.0
+    },
+    {
+      "id": "text-44",
+      "element": 126,
+      "text": "ZINE   ·   02",
+      "x": 891.64,
+      "y": 1568.17,
+      "width": 135.36,
+      "height": 22.099999999999998,
+      "font_size": 13.0,
+      "anchor": "end",
+      "baseline": 1580.0
+    }
+  ],
+  "photos": [
+    {
+      "id": "photo-01",
+      "element": 11,
+      "x": 54.0,
+      "y": 249.0,
+      "width": 664.0,
+      "height": 224.0
+    },
+    {
+      "id": "photo-02",
+      "element": 19,
+      "x": 737.0,
+      "y": 249.0,
+      "width": 290.0,
+      "height": 224.0
+    },
+    {
+      "id": "photo-03",
+      "element": 45,
+      "x": 150.0,
+      "y": 677.0,
+      "width": 285.0,
+      "height": 122.0
+    },
+    {
+      "id": "photo-04",
+      "element": 61,
+      "x": 596.0,
+      "y": 830.0,
+      "width": 285.0,
+      "height": 122.0
+    },
+    {
+      "id": "photo-05",
+      "element": 77,
+      "x": 150.0,
+      "y": 983.0,
+      "width": 285.0,
+      "height": 122.0
+    },
+    {
+      "id": "photo-06",
+      "element": 93,
+      "x": 596.0,
+      "y": 1136.0,
+      "width": 285.0,
+      "height": 122.0
+    },
+    {
+      "id": "photo-07",
+      "element": 109,
+      "x": 150.0,
+      "y": 1289.0,
+      "width": 285.0,
+      "height": 122.0
+    }
+  ],
+  "bodies": [
+    {
+      "id": "body-01",
+      "elements": [
+        54,
+        55,
+        56
+      ],
+      "x": 507.0,
+      "y": 720.0,
+      "width": 280.0,
+      "height": 61.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-02",
+      "elements": [
+        70,
+        71,
+        72
+      ],
+      "x": 72.0,
+      "y": 873.0,
+      "width": 280.0,
+      "height": 61.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-03",
+      "elements": [
+        86,
+        87,
+        88
+      ],
+      "x": 507.0,
+      "y": 1026.0,
+      "width": 280.0,
+      "height": 61.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-04",
+      "elements": [
+        102,
+        103,
+        104
+      ],
+      "x": 72.0,
+      "y": 1179.0,
+      "width": 280.0,
+      "height": 61.0,
+      "font_size": 14,
+      "color": "192934"
+    },
+    {
+      "id": "body-05",
+      "elements": [
+        118,
+        119,
+        120
+      ],
+      "x": 507.0,
+      "y": 1332.0,
+      "width": 280.0,
+      "height": 61.0,
+      "font_size": 14,
+      "color": "192934"
+    }
+  ],
+  "font_mapping": {
+    "Noto Sans CJK SC": "Microsoft YaHei",
+    "Noto Serif CJK SC": "SimSun (CJK) / Georgia (Latin)",
+    "note": "Original fonts absent on this machine; glyph appearance differs; geometry remains fixed"
+  }
+}

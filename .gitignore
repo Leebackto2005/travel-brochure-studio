@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+.env
+.env.*
+!.env.example
+output/
+validation/
+assets/*-test-report.json
+brochure-render-test-*/
+.grid-test-*/
