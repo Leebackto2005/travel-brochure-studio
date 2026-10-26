@@ -6,6 +6,8 @@
 
 ## 使用入口
 
+**给 Agent：开始工作前先阅读 [AGENTS.md](AGENTS.md)，再阅读 [SKILL.md](SKILL.md)，按任务选择其中的工具和参考文档。** 使用标准文件名 `AGENTS.md`，便于支持该约定的 Agent 发现；通过 Skill 调用时，`SKILL.md` 也会显式指向这份文件。
+
 将仓库放入 Codex 的 `skills/travel-brochure-studio` 目录，入口为 [SKILL.md](SKILL.md)。
 
 示例指令：
