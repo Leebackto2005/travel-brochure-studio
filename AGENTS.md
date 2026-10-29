@@ -10,6 +10,8 @@
 2. **制作基线**：确认采用的模板或最新版文件、页序、纸张尺寸，以及本次需要修改的页。已有成品优先局部修改，不默认重新设计整册。
 3. **交付范围**：确认用户需要的 PDF 与可编辑源文件类型。默认沿用 PPTX/PDF；已允许 HTML→PDF 或续改现有 HTML 时使用对应流程，不反复索要已给出的授权。
 
+新项目按 [项目目录与交付规范](references/project-folders.md) 在用户指定位置或当前工作区建立原始资料、图片素材、制作工作区及交付目录；已有项目沿用原位置，不自动搬动文件。明确的小改无需补建目录。
+
 ## 前期多交流，确认方向后再批量制作
 
 新项目、整册重排或参考资料有冲突时，默认主动进行前期沟通，先读 [需求沟通与样张确认](references/discovery.md)。不要只等用户指出问题，也不要看到附件就立即生成整册。
@@ -28,6 +30,7 @@
 
 | 当前任务 | 先读 | 优先使用 |
 |---|---|---|
+| 新建项目或确定资料、素材、工作区及交付目录 | [项目目录与交付规范](references/project-folders.md) | `scripts/init_project.py` 只创建新目录与空白台账 |
 | 按原模板制作可编辑 PPTX | [严格模板流程](references/strict-template.md) | `scripts/strict_template.py`、`scripts/render_office.ps1` |
 | 修改既有 PPTX 的文字或照片 | [局部修改](references/patch.md) | `scripts/studio.py` 的 inspect、patch、verify |
 | 用户允许 HTML→PDF，新建独立分格行程单 | [HTML/PDF 流程](references/html-pdf.md)、[字段说明](assets/html-grid/schema-notes.md) | `scripts/grid_brochure.py`、`scripts/render_brochure.cjs` |

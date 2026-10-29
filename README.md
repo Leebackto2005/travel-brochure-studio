@@ -22,6 +22,7 @@
 
 | 文件 | 用途 |
 |---|---|
+| `scripts/init_project.py` | 建立新项目目录、图片分类与空白素材台账 |
 | `scripts/strict_template.py` | 四套原生 PPTX 严格模板的槽位检查与填充 |
 | `scripts/studio.py` | 文档检查、PPTX 构建、局部补丁及验证 |
 | `scripts/grid_brochure.py` | JSON 驱动的固定纸张独立分格 HTML |
@@ -34,6 +35,8 @@
 详见 [HTML→PDF 工作流](references/html-pdf.md) 与 [严格模板流程](references/strict-template.md)。
 
 连续修改可用 [多轮修改与交付核对](references/revision-review.md)：保留对应版本及确认记录，区分行程日与物理页码，同时检查“指定内容已改对”和“未改页保持一致”。该流程来自实际酒店、航班及满版封面的回放；个案产品数据不作为工具默认值。
+
+新项目的原始资料、图片素材、制作工作区和分版本交付位置见 [项目目录与交付规范](references/project-folders.md)。运行 `scripts/init_project.py` 可建立新项目目录和空白素材台账；已有项目不自动搬迁。
 
 ## 依赖与运行
 
