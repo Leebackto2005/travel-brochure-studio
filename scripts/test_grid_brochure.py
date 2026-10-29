@@ -12,7 +12,7 @@ import unittest
 
 from PIL import Image
 
-from grid_brochure import Builder, main
+from grid_brochure import Builder, main, contrast
 
 
 class GridBrochureTests(unittest.TestCase):
@@ -88,6 +88,43 @@ class GridBrochureTests(unittest.TestCase):
         self.assertEqual(report['assets'][0]['path'], '<embedded-data-uri>')
         with self.assertRaisesRegex(ValueError, 'remote image URLs'):
             Builder(self.content([{'type': 'gallery', 'items': [{'image': 'https://example.org/photo.png'}]}]), self.base).build()
+
+    def test_palette_follows_theme_and_preserves_page_structure(self):
+        spec = self.content([{'type': 'day', 'day': 1, 'title': '行程', 'paragraphs': ['完整原文'], 'flight': {'route': '起点 → 终点'}, 'meals': {'lunch': '按原文'}}])
+        before, old_report = Builder(spec, self.base).build()
+        spec['theme'] = {'frame': '#173c54', 'accent': '#2a8193', 'paper': '#f9fcff', 'text': '#18303f'}
+        after, report = Builder(spec, self.base).build()
+        self.assertEqual(before.split('<body>')[1], after.split('<body>')[1])
+        self.assertEqual(old_report['pages'], report['pages'])
+        for role in ['surface', 'tint', 'line']:
+            self.assertNotEqual(old_report['palette'][role], report['palette'][role])
+        self.assertTrue(all(item['meets_4_5'] for item in report['contrast_checks']))
+
+    def test_light_frame_has_readable_titles_and_poor_body_colors_warn(self):
+        self.assertAlmostEqual(contrast('#000000', '#ffffff'), 21)
+        spec = self.content([])
+        spec['theme'] = {'frame': '#e7f2fa', 'paper': '#ffffff', 'text': '#18303f'}
+        _, report = Builder(spec, self.base).build()
+        palette = report['palette']
+        self.assertGreaterEqual(contrast(palette['on_frame'], palette['frame']), 4.5)
+        self.assertGreaterEqual(contrast(palette['heading'], palette['paper']), 4.5)
+        spec['theme']['text'] = '#eeeeee'
+        _, report = Builder(spec, self.base).build()
+        self.assertEqual(report['palette']['text'], '#eeeeee')
+        self.assertTrue(any('text/paper contrast' in warning for warning in report['warnings']))
+        self.assertIsNone(report['visual_qa_passed'])
+
+    def test_asset_license_metadata_is_recorded_not_asserted_as_verified(self):
+        metadata = {'creator': 'Example author', 'license_name': 'Review required', 'license_url': 'https://example.org/terms', 'attribution': 'Credit supplied by source', 'usage_scope': 'Brochure only', 'checked_on': '2026-01-01'}
+        spec = self.content([{'type': 'gallery', 'items': [{'image': {'path': 'wide.png', **metadata}}]}])
+        output, report = Builder(spec, self.base).build()
+        for key, value in metadata.items():
+            self.assertEqual(report['assets'][0][key], value)
+        self.assertFalse(report['license_metadata_verified'])
+        self.assertNotIn(metadata['license_url'], output)
+        spec['pages'][0]['blocks'][0]['items'][0]['image']['creator'] = ['not a string']
+        with self.assertRaisesRegex(ValueError, 'creator must be a string'):
+            Builder(spec, self.base).build()
 
     def test_example_is_generic_and_preserves_order(self):
         path = Path(__file__).resolve().parents[1] / 'assets' / 'html-grid' / 'example.json'

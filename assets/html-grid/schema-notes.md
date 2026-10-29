@@ -12,6 +12,8 @@ python scripts/grid_brochure.py build assets/html-grid/example.json --out output
 
 根对象：`title`（页脚总标题）、`theme`、`pages`。theme 仅接受 `frame`、`accent`、`paper`、`text` 四个 `#RRGGBB` 色值。pages 顺序就是最终页序，不依据标题或天数重新排列。
 
+构建器会由四个主题色派生 `surface`、`tint`、`line`、`on_frame`、`heading`，使照片底、餐宿条、航班条和表格线随主题联动；浅色框底自动选可读的标题文字色。输入字段保持原样，派生结果在报告的 `palette`。`contrast_checks` 给出五组实际色值的对比度，低于4.5:1时记录阅读提醒；不会擅自改写用户指定的正文色。这是有限的配色提示，不检查透明叠色、照片背景、全部字体或印刷色彩，也不代表可访问性认证。
+
 普通页：`{id,kind:"content",title,subtitle,blocks:[...]}`。id 必须唯一，由英文字母、数字、下划线或连字符组成。标题、字幕和正文均为原生可选中文字；传入 HTML 标签只会显示为文字。固定页面高度 297 mm；超出的原文不会被构建器删除、截短、缩小字号或自动放入下一页，需据渲染检查增加明确的续页。
 
 封面：`{id,kind:"cover",title,image,mode}`，不能再混入正文 blocks。
@@ -28,6 +30,8 @@ python scripts/grid_brochure.py build assets/html-grid/example.json --out output
 ```
 
 路径相对 SPEC 文件所在目录，也可用绝对路径或 PNG/JPEG/WebP/GIF 的 base64 data URI。禁止将网络 URL 当作图片路径；构建器不会下载网络资源。source_url 仅用于记录来源，不证明使用授权。生成报告包含图片实际路径、SHA-256、尺寸、来源字段、使用位置；缺图显示明确占位并记录警告。空路径用于有意留空。损坏或不支持的图片报错，防止悄悄跳过。参考标注显示在对应图片下方。
+
+图片对象可选字符串字段：`creator`、`license_name`、`license_url`、`attribution`、`usage_scope`、`checked_on`。这些字段进入报告，不自动成为图注，也不会自动核验许可；`license_metadata_verified:false` 始终明确这一边界。需要公开署名时由代理另行加入适当图注/署名页。素材库选择及记录方法见 [素材流程](../../references/asset-libraries.md)。
 
 ## 内容块
 

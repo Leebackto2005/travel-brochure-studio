@@ -33,9 +33,18 @@
 | 用户允许 HTML→PDF，新建独立分格行程单 | [HTML/PDF 流程](references/html-pdf.md)、[字段说明](assets/html-grid/schema-notes.md) | `scripts/grid_brochure.py`、`scripts/render_brochure.cjs` |
 | 局部修改既有 HTML | [HTML/PDF 流程](references/html-pdf.md) | `scripts/html_brochure.py` 的 inspect、patch、embed |
 | 更换 PDF 首页、合并指定页、核对其余页 | [HTML/PDF 流程](references/html-pdf.md) | `scripts/pdf_pages.py` 的 cover、merge、verify |
-| 选择配图或处理裁切 | [设计与配图](references/design.md) | 既有图框、cover/contain 和焦点参数 |
+| 诊断视觉问题、选择配图或处理裁切 | [设计与配图](references/design.md) | 代表页与整册缩略图、既有图框、cover/contain 和焦点参数 |
+| 缺图、换图、推荐素材库 | [素材库选择与候选图流程](references/asset-libraries.md) | 先按用途推荐来源，再核实候选图；有连接器时优先使用 |
 
 命令参数以对应脚本的 `--help` 为准；完整示例在所列文档中。优先复用已有工具，只有现有能力无法满足任务时再增加代码。
+
+## 视觉优化与素材推荐
+
+用户要求优化视觉时，先指出最影响结果的2—3处具体问题，给出对应修改办法：主次是否明确、文字是否易读、留白是否失衡、图片是否同组协调、配色是否完整联动。模板已经锁定时，优先在既有图框内改善照片、裁切和可读性；不能以优化为由自行重排整册。
+
+缺图或照片不合格时，主动推荐与缺口相匹配的素材库和搜索词。酒店/房型优先用户或官方对应资料；地标可查Commons；氛围图可查Unsplash/Pexels；有预算时提供Adobe Stock等具体候选；图标和字体分别使用风格一致、许可清楚的资源。关键图片给出少量候选、使用位置、来源与推荐理由，不止提供网站名。细则见上方素材流程。
+
+样张确认同时看视觉和内容：整册缩略图看节奏，实际阅读大小看字体，放大看图片和裁切。自动溢出检查通过不等于美观；素材元数据也不等于真实性或授权已核实。
 
 ## 制作与修改的边界
 

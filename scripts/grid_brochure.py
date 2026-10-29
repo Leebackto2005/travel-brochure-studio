@@ -27,6 +27,37 @@ DEFAULT_THEME = {"frame": "#614020", "accent": "#b48c4b", "paper": "#fffefb", "t
 SUPPORTED_MIMES = {"PNG": "image/png", "JPEG": "image/jpeg", "WEBP": "image/webp", "GIF": "image/gif"}
 
 
+def rgb(color: str) -> tuple[int, int, int]:
+    return tuple(int(color[i:i+2], 16) for i in (1, 3, 5))
+
+
+def blend(base: str, ink: str, amount: float) -> str:
+    return '#' + ''.join(f'{round(a * (1 - amount) + b * amount):02x}' for a, b in zip(rgb(base), rgb(ink)))
+
+
+def contrast(foreground: str, background: str) -> float:
+    def luminance(color):
+        channels = [v / 255 for v in rgb(color)]
+        linear = [v / 12.92 if v <= 0.04045 else ((v + 0.055) / 1.055) ** 2.4 for v in channels]
+        return sum(v * w for v, w in zip(linear, (0.2126, 0.7152, 0.0722)))
+    light, dark = sorted((luminance(foreground), luminance(background)), reverse=True)
+    return (light + 0.05) / (dark + 0.05)
+
+
+def theme_palette(theme: dict) -> dict:
+    """Derive supporting colors without changing the requested four theme inputs."""
+    on_frame = theme['paper']
+    if contrast(on_frame, theme['frame']) < 4.5:
+        on_frame = max((theme['text'], '#000000', '#ffffff'), key=lambda color: contrast(color, theme['frame']))
+    heading = theme['frame']
+    if contrast(heading, theme['paper']) < 4.5:
+        heading = max((theme['text'], '#000000', '#ffffff'), key=lambda color: contrast(color, theme['paper']))
+    return {**theme, 'on_frame': on_frame, 'heading': heading,
+            'surface': blend(theme['paper'], theme['frame'], 0.045),
+            'tint': blend(theme['paper'], theme['accent'], 0.12),
+            'line': blend(theme['paper'], theme['frame'], 0.25)}
+
+
 def esc(value: Any) -> str:
     return html.escape(str(value), quote=True)
 
@@ -104,6 +135,10 @@ class Builder:
         label = text(data.get("reference_label", ""), f"{location}.reference_label")
         record = {"location": location, "source_url": text(data.get("source_url", ""), "source_url"),
                   "role": text(data.get("role", ""), "role"), "reference_label": label}
+        # These are user/agent-supplied records, not automatic license verification.
+        for field in ('creator', 'license_name', 'license_url', 'attribution', 'usage_scope', 'checked_on'):
+            if field in data:
+                record[field] = text(data[field], f'{location}.{field}')
         if not raw:
             record.update(status="missing", path="", sha256=None)
             self.assets.append(record)
@@ -253,6 +288,13 @@ class Builder:
         theme.update(supplied_theme)
         if any(not isinstance(v, str) or not re.fullmatch(r"#[0-9a-fA-F]{6}", v) for v in theme.values()):
             raise ValueError("theme colors must be #RRGGBB")
+        palette = theme_palette(theme)
+        contrast_checks = []
+        for foreground, background in [('text', 'paper'), ('text', 'surface'), ('text', 'tint'), ('heading', 'paper'), ('on_frame', 'frame')]:
+            ratio = contrast(palette[foreground], palette[background])
+            contrast_checks.append({'foreground': foreground, 'background': background, 'ratio': ratio, 'meets_4_5': ratio >= 4.5})
+            if ratio < 4.5:
+                self.warnings.append(f'theme: {foreground}/{background} contrast {ratio:.2f}:1 is below the 4.5:1 readability reference; review the actual page before delivery')
         pages = self.spec.get("pages")
         if not isinstance(pages, list) or not pages:
             raise ValueError("pages must be a non-empty array")
@@ -296,10 +338,11 @@ class Builder:
                 raise ValueError(f"{page_id}: kind must be content or cover")
             self.pages.append({"number": index, "id": page_id, "title": page_title, "kind": kind, "width_mm": width, "height_mm": height})
         template = Path(__file__).resolve().parents[1] / 'assets' / 'html-grid' / 'template.html'
-        replacements = {'TITLE': esc(title), 'PAGES': ''.join(result), 'PAGE_CSS': '\n'.join(self.page_css), **{k.upper(): v for k, v in theme.items()}}
+        replacements = {'TITLE': esc(title), 'PAGES': ''.join(result), 'PAGE_CSS': '\n'.join(self.page_css), **{k.upper(): v for k, v in palette.items()}}
         # One pass prevents user text that resembles a token being interpreted.
         output = re.sub(r'@@([A-Z_]+)@@', lambda match: replacements[match[1]], template.read_text(encoding='utf-8'))
         report = {"schema_version": 1, "page_count": len(pages), "pages": self.pages, "assets": self.assets,
+                  "palette": palette, "contrast_checks": contrast_checks, "license_metadata_verified": False,
                   "warnings": self.warnings, "missing_image_count": sum(a['status'] == 'missing' for a in self.assets),
                   "images_embedded": True, "network_requests": 0, "automatic_pagination": False,
                   "visual_qa_passed": None, "overflow_checked": False,
