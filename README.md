@@ -28,9 +28,12 @@
 | `scripts/html_brochure.py` | 按页检查、嵌图、局部修改，保留未改页原始字节 |
 | `scripts/render_brochure.cjs` | 浏览器导出，检查资源、文字溢出、页数及尺寸 |
 | `scripts/pdf_pages.py` | 海报封面、指定页合并、其他页文字与渲染像素比较 |
+| `scripts/check_delivery.py` | 按本轮要求核对最终PDF与HTML的页码、文字、顺序和节点数量 |
 | `assets/html-grid/` | 通用 HTML 模板、JSON 示例和字段说明 |
 
 详见 [HTML→PDF 工作流](references/html-pdf.md) 与 [严格模板流程](references/strict-template.md)。
+
+连续修改可用 [多轮修改与交付核对](references/revision-review.md)：保留对应版本及确认记录，区分行程日与物理页码，同时检查“指定内容已改对”和“未改页保持一致”。该流程来自实际酒店、航班及满版封面的回放；个案产品数据不作为工具默认值。
 
 ## 依赖与运行
 
@@ -56,6 +59,7 @@ python scripts/self_test.py
 python scripts/test_strict.py
 python -m unittest discover -s scripts -p "test_*brochure.py" -v
 python -m unittest discover -s scripts -p "test_pdf_pages.py" -v
+python -m unittest discover -s scripts -p "test_check_delivery.py" -v
 ```
 
 浏览器测试需要上述渲染环境及可写工作目录。硬链接创建受系统权限限制时，相应测试会明确跳过。

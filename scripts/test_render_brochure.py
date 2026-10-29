@@ -56,6 +56,33 @@ class RenderTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertTrue(json.loads(self.report.read_text(encoding='utf-8'))['draft_with_placeholders'])
 
+    def test_legacy_and_unassigned_flights_remain_visible_in_report(self):
+        self.source_html('<section class="page"><div class="day"><div class="dayhead">D8 Return</div><div class="flight-callout">00:05</div></div><div class="flight-strip">Outside a day</div><div class="day"><div class="flight-callout">Unknown day</div></div></section>')
+        result = self.run_render()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        flights = json.loads(self.report.read_text(encoding='utf-8'))['pages'][0]['flight_days']
+        self.assertEqual(flights[0]['day'], '8')
+        self.assertEqual(flights[0]['day_source'], 'heading-label')
+        self.assertEqual(flights[1]['placement'], 'unassigned')
+        self.assertIsNone(flights[1]['day'])
+        self.assertIsNone(flights[2]['day'])
+
+    def test_bottom_padding_is_advisory_but_paper_edge_is_blocking(self):
+        self.source_html('<section class="page"><div class="paper"><main style="position:relative"><p style="position:absolute;top:248mm;height:10mm">Readable note</p></main></div><footer>Footer</footer></section>')
+        result = self.run_render()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        report = json.loads(self.report.read_text(encoding='utf-8'))
+        self.assertEqual(report['overflow_count'], 0)
+        self.assertGreater(report['spacing_warning_count'], 0)
+        with fitz.open(self.pdf) as doc:
+            self.assertIn('Readable note', doc[0].get_text())
+        original = self.pdf.read_bytes()
+        self.source_html('<section class="page"><div class="paper"><main style="position:relative"><p style="position:absolute;top:255mm;height:10mm">Outside paper</p></main></div><footer>Footer</footer></section>')
+        result = self.run_render('--overwrite')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(self.pdf.read_bytes(), original)
+        self.assertGreater(json.loads(self.report.read_text(encoding='utf-8'))['overflow_count'], 0)
+
     def test_overflow_does_not_replace_existing_output(self):
         self.source_html('<section class="page"><div class="paper"><main><p style="height:400mm">完整长文不删减</p></main></div></section>')
         original = b'preserve previous output'

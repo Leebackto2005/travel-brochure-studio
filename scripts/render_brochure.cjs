@@ -79,7 +79,7 @@ async function run(options) {
   const report = {
     source: input, source_sha256: crypto.createHash('sha256').update(fs.readFileSync(input)).digest('hex'),
     output, static_html: true, scripts_executed: false, remote_requests: [], failed_requests: [], pages: [],
-    missing_image_count: 0, placeholder_count: 0, overflow_count: 0, exported: false,
+    missing_image_count: 0, placeholder_count: 0, overflow_count: 0, spacing_warning_count: 0, exported: false,
     visual_qa_passed: null, preview_type: 'HTML print-media screenshots; final PDF needs separate rendering and visual review',
     limitations: ['Geometry checks do not prove wording, image semantics, font fidelity, print color, or final visual acceptance.'],
   };
@@ -107,16 +107,18 @@ async function run(options) {
       const footerTop = footer ? footer.getBoundingClientRect().top : bounds.bottom;
       const paperBounds = paper?.getBoundingClientRect();
       const paperStyle = paper && getComputedStyle(paper);
-      const bottomLimit = Math.min(bounds.bottom, footerTop - (footer ? 4 : 0), paperBounds ? paperBounds.bottom - parseFloat(paperStyle.paddingBottom || '0') : bounds.bottom);
+      const bottomLimit = Math.min(bounds.bottom, footerTop - (footer ? 4 : 0), paperBounds ? paperBounds.bottom : bounds.bottom);
+      const preferredBottom = paperBounds ? Math.min(bottomLimit, paperBounds.bottom - parseFloat(paperStyle.paddingBottom || '0')) : bottomLimit;
       const content = main || element;
       const items = Array.from(new Set([element, paper, content, ...content.querySelectorAll('*')])).filter(item => item && !item.closest('svg, .kv-hero') && getComputedStyle(item).display !== 'none');
-      const violations = [];
+      const violations = [], spacingWarnings = [];
       for (const item of items) {
         const rect = item.getBoundingClientRect(), style = getComputedStyle(item);
         if (!rect.width && !rect.height) continue;
         const name = `${item.tagName.toLowerCase()}${item.className && typeof item.className === 'string' ? '.' + item.className.trim().replace(/\s+/g, '.') : ''}`;
         const problems = [];
         if (main && (item === main || main.contains(item)) && rect.bottom > bottomLimit + 2) problems.push('content exceeds paper/footer boundary');
+        else if (main && (item === main || main.contains(item)) && rect.bottom > preferredBottom + 2) spacingWarnings.push({ element: name, text: (item.innerText || '').slice(0, 100), reason: 'content enters paper bottom padding without crossing the paper/footer boundary', intrusion_px: rect.bottom - preferredBottom });
         if (rect.left < bounds.left - 2 || rect.right > bounds.right + 2) problems.push('outside page horizontally');
         if (rect.bottom > bounds.bottom + 2 || rect.top < bounds.top - 2) problems.push('outside page vertically');
         if (item.clientWidth > 0 && item.scrollWidth > item.clientWidth + 2 && !['IMG', 'SVG'].includes(item.tagName)) problems.push('horizontal content overflow');
@@ -124,15 +126,25 @@ async function run(options) {
         if (problems.length) violations.push({ element: name, text: (item.innerText || '').slice(0, 100), problems, bounds: { left: rect.left - bounds.left, top: rect.top - bounds.top, width: rect.width, height: rect.height } });
       }
       const images = Array.from(element.querySelectorAll('img')).map(image => ({ alt: image.alt, width_px: image.naturalWidth, height_px: image.naturalHeight, loaded: image.complete && image.naturalWidth > 0, fit: getComputedStyle(image).objectFit, position: getComputedStyle(image).objectPosition }));
+      // Inventory the two supported layouts. Unknown day labels stay explicit;
+      // finding a flight does not certify its business date or placement.
+      const flights = Array.from(element.querySelectorAll('.flight-strip,.flight-callout')).map(flight => {
+        const day = flight.closest('.day'), label = day?.querySelector('.dayhead')?.innerText || '';
+        const match = label.match(/^\s*(?:D(?:ay)?\s*(\d+)\b|第\s*(\d+)\s*天|(\d+)(?:\s|$))/i);
+        const explicit = day?.dataset.day;
+        const inferred = match && (match[1] || match[2] || match[3]);
+        return { day: explicit || inferred || null, day_source: explicit ? 'data-day' : inferred ? 'heading-label' : 'unresolved', placement: day ? 'inside-day' : 'unassigned', flight: flight.innerText };
+      });
       return { page: index + 1, id: element.dataset.pageId || null, width_mm: bounds.width * 25.4 / 96, height_mm: bounds.height * 25.4 / 96,
         broken_images: images.filter(image => !image.loaded), images, placeholders: element.querySelectorAll('.image-placeholder,.photo-placeholder,[data-placeholder="true"]').length,
-        violations, flight_days: Array.from(element.querySelectorAll('article.day[data-day]')).filter(day => day.querySelector('.flight-strip')).map(day => ({ day: day.dataset.day, flight: day.querySelector('.flight-strip').innerText })) };
+        violations, spacing_warnings: spacingWarnings, flight_days: flights };
     }));
     if (!report.pages.length) throw new Error('No section.page elements found; this renderer requires an explicit page layout.');
     report.page_count = report.pages.length;
     report.missing_image_count = report.pages.reduce((n, p) => n + p.broken_images.length, 0);
     report.placeholder_count = report.pages.reduce((n, p) => n + p.placeholders, 0);
     report.overflow_count = report.pages.reduce((n, p) => n + p.violations.length, 0);
+    report.spacing_warning_count = report.pages.reduce((n, p) => n + p.spacing_warnings.length, 0);
     if (previewDir) {
       for (let i = 0; i < report.pages.length; i++) await page.locator('section.page').nth(i).screenshot({ path: path.join(previewDir, `page_${String(i + 1).padStart(2, '0')}.png`), timeout: 30000 });
     }
@@ -167,7 +179,7 @@ async function run(options) {
       catch (error) { throw new Error(`${report.exported ? 'PDF was exported, but QA report publication failed' : 'QA report publication failed'}: ${error.message}`); }
     }
   }
-  console.log(JSON.stringify({ output, page_count: report.page_count, draft_with_placeholders: report.draft_with_placeholders, report: reportPath }));
+  console.log(JSON.stringify({ output, page_count: report.page_count, draft_with_placeholders: report.draft_with_placeholders, spacing_warning_count: report.spacing_warning_count, report: reportPath }));
 }
 if (process.argv.includes('--help')) {
   console.log('node render_brochure.cjs INPUT.html --out OUTPUT.pdf --report REPORT.json [--preview-dir DIR] [--browser PATH] [--python PATH] [--allow-incomplete] [--overwrite]\nRequires Playwright, a Chromium browser, Python and PyMuPDF. Environment: BROCHURE_PLAYWRIGHT, BROCHURE_BROWSER, BROCHURE_PYTHON.');

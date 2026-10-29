@@ -17,6 +17,8 @@ description: "制作和局部修改旅游宣传册、双语行程单和旅行产
 
 视觉优化按 [设计与配图](references/design.md) 先诊断主次、密度、字体、色彩和图片质量，再修改代表页。缺图或需要换图时，主动按 [素材库选择与候选图流程](references/asset-libraries.md) 推荐来源、筛选真实对应素材并给出候选理由；保留来源和许可记录，不把搜索结果或自动检查当作最终验收。
 
+多轮修改或同时更新PDF与源文件时，按 [多轮修改与交付核对](references/revision-review.md) 锁定对应版本、建立物理页码与行程日映射，将本轮要求写成可检查结果。`check_delivery.py`检查指定内容是否落实，`pdf_pages.py verify`检查未改页；两者不互相替代。
+
 ## 默认入口：严格模板填充
 
 当前四份原始SVG及其原生PPTX模板在 `assets/reference-shapes/` 和 `assets/strict-templates/`。使用 `scripts/strict_template.py`，参见 [严格模板填充](references/strict-template.md)。先catalog建立文字、照片与正文槽位，再由最新确认事实逐项映射，随后build、渲染、校对。模板灰色线条是正文占位，不是成品装饰；填入对应正文时自动移除相应灰条。
