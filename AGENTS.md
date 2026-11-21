@@ -30,6 +30,7 @@
 
 | 当前任务 | 先读 | 优先使用 |
 |---|---|---|
+| 旅游促销海报制作与改稿、甲方审美偏好、团期费用校对 | [旅游长海报的甲方偏好、团期价格与改稿](references/travel-poster-pricing.md) | 对照指定区域，检查目的地与价格的主次、团期与报价的对应关系及手机可读性 |
 | 新建项目或确定资料、素材、工作区及交付目录 | [项目目录与交付规范](references/project-folders.md) | `scripts/init_project.py` 只创建新目录与空白台账 |
 | 按原模板制作可编辑 PPTX | [严格模板流程](references/strict-template.md) | `scripts/strict_template.py`、`scripts/render_office.ps1` |
 | 修改既有 PPTX 的文字或照片 | [局部修改](references/patch.md) | `scripts/studio.py` 的 inspect、patch、verify |
